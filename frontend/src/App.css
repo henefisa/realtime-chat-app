@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.chat-container .chat {
+  height: 500px;
+  position: relative;
+  overflow: auto;
+}
+
+.chat-container .chat .chat__messages {
+  height: 100%;
+}
+
+.message {
+  margin-bottom: 5px;
+  max-width: 300px;
+}
+
+.message p {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #3b82f6;
+  border-radius: 9999px;
+}
+
+.message.message--owner {
+  text-align: right;
+  margin-left: auto;
+}
+
+.chat-container .chat .chat__input-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  border: 1px solid #d1d5db;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.chat-container .chat .chat__input-container input {
+  flex: 1 1 auto;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  color: #374151;
+  padding: 5px 0px 5px 5px;
+}
+
+.chat-container .chat .chat__input-container button {
+  font-size: 16px;
+  flex: 0 1 auto;
+  padding: 8px 12px;
+  border: none;
+  background: #10b981;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.chat-container .chat .chat__input-container button:hover {
+  background-color: #34d399;
+}
